@@ -1,0 +1,157 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+header{
+    text-align: center;
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.773);
+    padding:0.5%;
+}
+
+h1{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    margin: auto 4em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav a:hover{
+    background-color: lightgray;
+    padding:0.6em;
+}
+
+.pararight{
+    padding:1%;
+    margin-left: 50vw;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+    width: 25vw;
+    font-weight: 300;
+}
+
+.paraleft{
+    padding:1%;
+    margin-right: 50vw;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.headerleft{
+    padding: 1%;
+    flex: 1;
+    text-align: right;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+    font-weight: 300;
+}
+.headerright{
+    padding: 1%;
+    margin-right: 40vw;
+    flex: 1;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.old{
+    background-color: darkgray;
+    padding: 0px;
+}
+
+.img{
+    float:right;
+    width:20vw;
+    margin:1%;
+    border:solid 5px black;
+}
+
+.new{
+    background-color: white;
+    border:solid 4px #283D3B;
+}
+
+.img1{
+    float:left;
+    width:20vw;
+    margin: 1%;
+    border:solid 5px black;
+}
+
+.clear{
+    clear:both;
+}
+
+.top {
+    background-color: white;
+    padding:0px;
+    height:390px;
+    border:solid 4px #283D3B;
+    border-top: 0px;
+}
+
+#stage{
+    display: flex;
+    justify-content: center;
+}
+
+  #stage a {
+    position:absolute;
+    width:700px;
+    height:400px;
+    margin: 0px auto;
+    text-align: center;
+    
+ 
+  }
+
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+.info{
+    float:left;
+    text-align: center;
+    margin-left: 5vw;
+    padding: 1vw 4vw;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+}
+.bottom{
+    background-color: darkgray;
+    width:100%;
+}
+
